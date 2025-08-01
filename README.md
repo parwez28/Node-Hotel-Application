@@ -47,6 +47,7 @@ This application manages data related to **hotel staff (Persons)** and **Menu It
 ---
 
 📦 Data Models
+<br/>
 👤 Person
 The Person data model represents information about staff members in the hotel.
 
@@ -100,7 +101,7 @@ Copy
 Edit
 {
   "name": "Spicy Chicken Curry",
-  "price": 12.99,
+  "price": 12.99,   
   "taste": "spicy",
   "is_drink": false,
   "ingredients": ["chicken", "spices", "vegetables"],
