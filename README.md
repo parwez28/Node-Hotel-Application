@@ -46,21 +46,29 @@ This application manages data related to **hotel staff (Persons)** and **Menu It
 
 ---
 
-Data Models
-Person
+📦 Data Models
+👤 Person
 The Person data model represents information about staff members in the hotel.
 
-Fields:
+🔑 Fields:
+name: String — Person's name
 
-name: String (Person's name)
-age: Number (Person's age)
-work: Enum (Role in the hotel, such as chef, waiter, manager)
-mobile: String (Person's mobile number)
-email: String (Person's email address, unique)
-address: String (Person's address)
-salary: Number (Person's salary)
-Example:
+age: Number — Person's age
 
+work: Enum — Role in the hotel (e.g., chef, waiter, manager)
+
+mobile: String — Person's mobile number
+
+email: String — Person's email address (unique)
+
+address: String — Person's address
+
+salary: Number — Person's salary
+
+🧪 Example:
+json
+Copy
+Edit
 {
   "name": "John Doe",
   "age": 30,
@@ -70,20 +78,26 @@ Example:
   "address": "123 Main Street",
   "salary": 30000
 }
+🍽️ Menu Item
+The MenuItem data model represents the food and drinks available in the hotel.
 
-Menu Item
-The MenuItem data model represents information about menu items available in the hotel.
+🔑 Fields:
+name: String — Name of the item
 
-Fields:
+price: Number — Price of the item
 
-name: String (Item's name)
-price: Number (Item's price)
-taste: Enum (Item's taste, such as sweet, spicy, sour)
-is_drink: Boolean (Indicates if the item is a drink, default is false)
-ingredients: Array of Strings (List of ingredients, default is an empty array)
-num_sales: Number (Number of sales for the item, default is 0)
-Example:
+taste: Enum — Taste type (e.g., sweet, spicy, sour)
 
+is_drink: Boolean — Whether it’s a drink (default: false)
+
+ingredients: Array[String] — Ingredients used (default: [])
+
+num_sales: Number — Number of times sold (default: 0)
+
+🧪 Example:
+json
+Copy
+Edit
 {
   "name": "Spicy Chicken Curry",
   "price": 12.99,
