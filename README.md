@@ -47,29 +47,21 @@ This application manages data related to **hotel staff (Persons)** and **Menu It
 ---
 
 📦 Data Models
-<br/>
 👤 Person
 The Person data model represents information about staff members in the hotel.
 
-🔑 Fields:
-name: String — Person's name
+### 🔑 Fields:
 
-age: Number — Person's age
+- `name`: String — Person's name  
+- `age`: Number — Person's age  
+- `work`: Enum — Role in the hotel (e.g., chef, waiter, manager)  
+- `mobile`: String — Person's mobile number  
+- `email`: String — Person's email address (unique)  
+- `address`: String — Person's address  
+- `salary`: Number — Person's salary  
 
-work: Enum — Role in the hotel (e.g., chef, waiter, manager)
-
-mobile: String — Person's mobile number
-
-email: String — Person's email address (unique)
-
-address: String — Person's address
-
-salary: Number — Person's salary
-
-🧪 Example:
-json
-Copy
-Edit
+### 📄 Example:
+```json
 {
   "name": "John Doe",
   "age": 30,
@@ -79,26 +71,22 @@ Edit
   "address": "123 Main Street",
   "salary": 30000
 }
-🍽️ Menu Item
-The MenuItem data model represents the food and drinks available in the hotel.
 
-🔑 Fields:
-name: String — Name of the item
+## 🍽️ Menu Item
 
-price: Number — Price of the item
+The `MenuItem` data model represents the food and drinks available in the hotel.
 
-taste: Enum — Taste type (e.g., sweet, spicy, sour)
+### 🔑 Fields:
 
-is_drink: Boolean — Whether it’s a drink (default: false)
+- `name`: String — Name of the item  
+- `price`: Number — Price of the item  
+- `taste`: Enum — Taste type (e.g., sweet, spicy, sour)  
+- `is_drink`: Boolean — Whether it’s a drink (default: `false`)  
+- `ingredients`: Array[String] — Ingredients used (default: `[]`)  
+- `num_sales`: Number — Number of times sold (default: `0`)  
 
-ingredients: Array[String] — Ingredients used (default: [])
-
-num_sales: Number — Number of times sold (default: 0)
-
-🧪 Example:
-json
-Copy
-Edit
+### 🧪 Example:
+```json
 {
   "name": "Spicy Chicken Curry",
   "price": 12.99,   
@@ -107,6 +95,7 @@ Edit
   "ingredients": ["chicken", "spices", "vegetables"],
   "num_sales": 50
 }
+
 
 Usage
 Install Dependencies:
