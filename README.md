@@ -72,11 +72,11 @@ The Person data model represents information about staff members in the hotel.
   "salary": 30000
 }
 
-## 🍽️ Menu Item
+🍽️ Menu Item
 
 The `MenuItem` data model represents the food and drinks available in the hotel.
 
-### 🔑 Fields:
+🔑 Fields:
 
 - `name`: String — Name of the item  
 - `price`: Number — Price of the item  
@@ -85,7 +85,7 @@ The `MenuItem` data model represents the food and drinks available in the hotel.
 - `ingredients`: Array[String] — Ingredients used (default: `[]`)  
 - `num_sales`: Number — Number of times sold (default: `0`)  
 
-### 🧪 Example:
+🧪 Example:
 ```json
 {
   "name": "Spicy Chicken Curry",
